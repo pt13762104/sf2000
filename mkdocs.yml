@@ -1,4 +1,6 @@
 site_name: SF2000
+site_url: https://pt13762104.github.io/sf2000/
+repo_url: https://github.com/pt13762104/sf2000/
 nav:
   - Home: 'index.md'
   - FAQ: 'faq.md'

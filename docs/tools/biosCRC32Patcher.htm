@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Data Frog SF2000 BIOS CRC32 Patcher</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="tools.css">
+  </head>
+  <body>
+    <h1>Data Frog SF2000 BIOS CRC32 Patcher</h1>
+    <p>This tool will recalculate and patch the CRC32 check bits for a modified <code>bisrv.asd</code> BIOS file for the SF2000; only really useful if you've manually modified data outside of the "safe" areas covered by my other tools. If you haven't done your own hex editing of the BIOS, then this tool probably isn't for you! 🙂</p>
+    <p id="initialWarning"></p>
+    <hr>
+    <div id="steps">
+      <section id="bisrvSection">
+        <h2>Step 1: Select Your <code>bisrv.asd</code></h2>
+        <p>Select your <code>bisrv.asd</code> file. You should probably make a backup of the file first, just in case!</p>
+        <div id="bisrvMessages"></div>
+        <div class="controlContainer">
+          <label class="control">Open <code>bisrv.asd</code>: <input id="bisrvSelector" type="file" accept=".asd,application/octet-stream" onchange="bisrvLoad(event.target.files[0])"></label>
+        </div>
+      </section>
+    </div>
+    <script src="tools.js"></script>
+    <script type="text/javascript">
+
+      // Global variables...
+      var bisrvData;    // Used to store the binary data from the bisrv.asd file
+
+      // Display our initial warning message
+      setMessage("warning", "initialWarning", "<strong><em>WARNING:</em></strong> This tool will just blindly modify bytes <code>0x18c</code> to <code>0x18f</code> of whatever input file you provide; correct usage of this tool is therefore up to you, not me! 🤣");
+
+      function bisrvLoad(file) {
+        // We've got a new file - clear any old error messages and any HTML after
+        // Step 1...
+        document.getElementById("bisrvMessages").innerHTML = "";
+        while(document.getElementById("bisrvSection").nextSibling) {
+          document.getElementById("bisrvSection").nextSibling.remove();
+        }
+
+        // Check to make sure the file is at least ~512-bytes-ish long (CRC32 for
+        // bisrv.asd is calculated for bytes 512 onwards)...
+        if (file.size < 520) {
+          setMessage("error", "bisrvMessages", "ERROR: Provided file is too small!");
+          return;
+        }
+
+        // If we're here then we should be good - read in our file and store its
+        // contents in bisrvData, then patch the CRC32 bytes...
+        var frBisrv = new FileReader();
+        frBisrv.readAsArrayBuffer(file);
+        frBisrv.onload = function(event) {
+
+          // Read the provided file's data into an array...
+          bisrvData = new Uint8Array(event.target.result);
+
+          // Patch the CRC32 bytes...
+          patchCRC32(bisrvData);
+
+          // And display Step 2...
+          stepTwo();
+        };
+      }
+
+      function stepTwo() {
+        // Start building our HTML...
+        var html = "<section id=\"downloadSection\"><h2>Step 2: Download Patched <code>bisrv.asd</code></h2><p>Click the download button for the patched <code>bisrv.asd</code> file; use it to replace the one in the <code>bios</code> folder on your SF2000's microSD card.</p><div id=\"downloadSectionMessages\"></div>";
+
+        // Add our download button...
+        html += "<div class=\"controlContainer\"><div class=\"control\"><input id=\"downloadButton\" type=\"button\" value=\"Download\"></div></div>";
+
+        // Finally, add a <hr> separator after the last step, and append the new step...
+        document.getElementById("steps").insertAdjacentHTML("beforeend", "<hr>");
+        document.getElementById("steps").insertAdjacentHTML("beforeend", html);
+
+        // Attach our event handler to our download button...
+        var dButton = document.getElementById("downloadButton");
+        dButton.addEventListener("click", function() {
+          downloadToBrowser(bisrvData, "application/octet-stream", "bisrv.asd");
+        });
+      }
+    </script>
+    <hr>
+    <p><a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>: public domain. Version 1.1, 20230626.1</p>
+  </body>
+</html>

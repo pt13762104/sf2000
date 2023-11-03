@@ -1,0 +1,14 @@
+site_name: SF2000
+nav:
+  - Home: 'index.md'
+  - FAQ: 'faq.md'
+  - 'Tools and Links': 'tools.md'
+  - 'Version History': 'version.md'
+  - SF2000: 
+    - Hardware: 'sf2000/hardware.md'
+    - Emulators: 'sf2000/emulators.md'
+    - Firmware: 'sf2000/firmware.md'
+    - Resources: 'sf2000/resources.md'
+theme: 
+  name: material
+  favicon: favicon.ico

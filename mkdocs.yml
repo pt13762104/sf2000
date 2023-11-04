@@ -14,3 +14,6 @@ nav:
 theme: 
   name: material
   favicon: favicon.ico
+  logo: logo.png
+  palette:
+    primary: green

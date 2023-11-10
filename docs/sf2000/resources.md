@@ -50,9 +50,7 @@ As far as I am aware, all of the below images are actively used by the latest fi
 | `fvecpl.ai` | 40x24 | BGRA | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Game Boy game-list indicator | [view](../images/fvecpl.png) |
 | `gakne.ctp` | 576x256 | BGRA |  |  | ✨ | ✅ | ✅ | ✅ | ✅ | A new copy of the English menu labels image, identical to older versions of `dxkgi.ctp` (which was changed entirely in the May 15th firmware) | [view](../images/gakne.ctp.png) |
 | `gkavc.ers` | 576x256 | BGRA |  |  | ✨ | ✅ | ✅ | ✅ | ✅ | A new copy of the Chinese menu labels image, identical to older versions of `itiss.ers` (which was changed entirely in the May 15th firmware) | [view](../images/gkavc.ers.png) |
-| `gpsvc.bvs` | 392x80 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | In-game menu save-state slot (position 3) | [view](../images/gpsvc.png) |
 | `hctml.ers` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Arcade main menu background | [view](../images/hctml.png) |
-| `hgcpl.cke` | 392x80 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | In-game menu save-state slot (position 2) | [view](../images/hgcpl.png) |
 | `hlink.bvs` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Search keyboard (hover) | [view](../images/hlink.png) |
 | `htui.kcc` | 40x24 | BGRA | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Game Boy Color game-list indicator | [view](../images/htui.png) |
 | `icm32.dll` | 40x24 | BGRA | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Game Boy Advance game-list indicator | [view](../images/icm32.png) |
@@ -65,13 +63,11 @@ As far as I am aware, all of the below images are actively used by the latest fi
 | `jccatm.kbp` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | "Battery Empty" screen | [view](../images/jccatm.png) |
 | `ke89a.bvs` | 1008x164 | BRGA |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | User settings screen icons and labels in Portuguese | [view](../images/ke89a.bvs.png) |
 | `kmbcj.acp` | 640x480 | RGB565 Little Endian |  |  | ✨ | ✅ | ✅ | ✅ | ✅ | The full-screen background image for the new button mapping screen | [view](../images/kmbcj.acp.png) |
-| `ksxbar.ax` | 392x80 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | In-game menu save-state slot (position 4) | [view](../images/ksxbar.png) |
 | `lfsvc.dll` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Search game-list background | [view](../images/lfsvc.png) |
 | `lk7tc.bvs` | 52x192 | BGRA |  |  | ✨ | ✅ | ✅ | ✅ | ✅ | Transparent labels for the button assignments in the new button mapping feature; these are the ones overlaid on the big SF2000 image showing the current assignments | [view](../images/lk7tc.bvs.png) |
 | `lkvax.aef` | 640x480 | RGB565 Little Endian |  |  | ✨ | ✅ | ✅ | ✅ | ✅ | History game-list background | [view](../images/lkvax.aef.png) |
 | `mkhbc.rcv` | 640x1440 | RGB565 Little Endian |  |  | ✨ | ✅ | ✅ | ✅ | ✅ | Six vertically-stacked images of the SF2000 with different buttons highlighted, used as part of the new button mapping feature's UI | [view](../images/mkhbc.rcv.png) |
 | `mksh.rcv` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Search keyboard (normal) | [view](../images/mksh.png) |
-| `msdmo.gdb` | 392x80 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | In-game menu save-state slot (position 1) | [view](../images/msdmo.png) |
 | `msgsm.dll` | 40x24 | BGRA | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Arcade game-list indicator | [view](../images/msgsm.png) |
 | `mssvp.nec` | 1008x164 | BRGA |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | User settings screen icons and labels in Japanese | [view](../images/mssvp.nec.png) |
 | `normidna.bin` | 40x24 | BGRA | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Search game-list indicator | [view](../images/normidna.png) |
@@ -111,13 +107,17 @@ To the best of my knowledge, the following image files are currently __unused__ 
 | `fcont.ctp` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Alternate UI: User main menu background | [view](../images/unused/fcont.ctp.png) |
 | `fdbil.ph` | 1100x120 | BGRA | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Large icons for each system, including systems not supported by the SF2000 (selected) | [view](../images/unused/fdbil.ph.png) |
 | `gpapi.bvs` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | In-game menu (position 5; looks like it was for some kind of button layout changing UI) | [view](../images/unused/gpapi.bvs.png) |
+| `gpsvc.bvs` | 392x80 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | In-game menu save-state slot (position 3) | [view](../images/gpsvc.png) |
+| `hgcpl.cke` | 392x80 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | In-game menu save-state slot (position 2) | [view](../images/hgcpl.png) |
 | `ihds.bke` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Genesis/Mega Drive game-list background, with baked-in thumbnail placeholder | [view](../images/unused/ihds.bke.png) |
 | `kdill.hsp` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Alternate UI: Game Boy Advance main menu background | [view](../images/unused/kdill.hsp.png) |
+| `ksxbar.ax` | 392x80 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | In-game menu save-state slot (position 4) | [view](../images/ksxbar.png) |
 | `logilda.be` | 40x24 | BGRA | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | CPS1 game-list indicator | [view](../images/unused/logilda.be.png) |
 | `mfc64.emc` | 40x24 | BGRA | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | CPS2 game-list indicator | [view](../images/unused/mfc64.emc.png) |
 | `mfpmp.ers` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Alternate UI: Arcade main menu background | [view](../images/unused/mfpmp.ers.png) |
 | `mhg4s.ihg` | 400x192 | RGB565 Little Endian |  |  | ✨ | ✅ | ✅ | ✅ | ✅ | Background and buttons for a "warning" prompt with "OK", "Yes" and "No" buttons. Also has rounded edges stored in a separate image file, `zaqrc.olc` | [view](../images/unused/mhg4s.ihg.png) |
 | `mrtac.klo` | 40x24 | BGRA | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Neo Geo game-list indicator | [view](../images/unused/mrtac.klo.png) |
+| `msdmo.gdb` | 392x80 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | In-game menu save-state slot (position 1) | [view](../images/msdmo.png) |
 | `msdtc.bke` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Alternate UI: Game Boy Advance main menu background | [view](../images/unused/msdtc.bke.png) |
 | `mswbv.cpl` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Alternate UI: Game Boy Advance main menu background | [view](../images/unused/mswbv.cpl.png) |
 | `nettrace.dll` | 40x24 | BGRA | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Unknown game-list indicator (grey joystick with yellow buttons) | [view](../images/unused/nettrace.dll.png) |
@@ -152,6 +152,7 @@ These are other files that have been identified, which don't fit into the other 
 | `History.bin` |  |  | ✨ | ✅ | ✅ | ✅ | ✅ | Used to store the history of played ROMs; only appears after the first game is played after installing the 05.15 or later firmware. User ROMs are not added to history, only built-in games. If a built-in game that is referenced in history is removed from the device, the device will crash when trying to view the History screen. You can delete the History.bin file to clear the device's history; there is no built-in functionality to do so |
 | `jsnno.uby` |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | UI strings in Dutch |
 | `kcbn7.avc` |  | ✨ | ❌ |  |  |  |  | Duplicate copy of `bisrv.asd`, the main firmware for the device which is found in the BIOS folder  |
+| `kcnuv.lit` | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | UNKNOWN; a bunch of 4-byte binary chunks (e.g., `0xC4 0x00 0x00 0x00`), followed by a list of .NES ROM file names. Very similar to the `.bvs`/`.nec`/`.tax` files detailed above, but doesn't have the same type of "header" they have |
 | `KeyMapInfo.kmp` |  |  | ✨ | ✅ | ✅ | ✅ | ✅ | Used to store the user-assignable global button mappings for each emulated system |
 | `lf9lb.cut` |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | UI strings in Portuguese |
 | `ntrcq.oba` |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | UI strings in Japanese |
@@ -191,7 +192,7 @@ FF8000 ROMS
 
 And here's my current understanding of what each line is used for:
 
-- `SF2000`: The name of the device; I don't believe it's actively used anywhere, please correct me if I'm wrong!
+- `SF2000`: The name of the device; this string is checked by the BIOS to ensure it matches `SF2000`
 - `17`: The number of languages supported by the firmware
 - `FFFFFF`: Hexadecimal colour (RGB) for the general game-list texts, and the `x/yyy` game count in the top-right corner of each game-list
 - `FF8000 ROMS`: The first defined main menu section (the sections that are scrolled vertically on the main menu). Internally they are numbered from 0; so the `ROMS` section (user ROMs and settings) is 0, `FC` (NES) is 1, `SFC` (SNES) is 2, etc.. The `FF8000` is the hexadecimal colour (RGB) to display the text of the currently selected/highlighted game in the list; the default colour is orange. _Side note:_ after the `ARCADE` section, there's two additional `ROMS` sections; the firmware is hard-coded to have ten sections. The SF2000 appears to share its firmware with other similar devices, and some of those devices feature different menu sections (e.g., "CPS1", "Neo Geo", etc.). I suspect that the best of those systems has ten sections in its main menu, which doesn't match up with the eight sections on the SF2000 (seven supported systems + the user ROMs/settings section). As the firmware requires ten sections to be defined, they just repeated the `ROMS` section to fill in the remaining places. Like I say, that's just a guess!
@@ -273,13 +274,6 @@ If you want to do it using [Audacity](https://www.audacityteam.org/), the steps 
 | `swapfile.sys` | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | "Squishy" sound played when navigating horizontally through "shortcut" games on the main menu, or vertically within a system's game-list | [listen](../sounds/swapfile.sys.mp3) |
 
 If you would like to silence all the _UI_ sounds (everything other than the background music), `dteyn` has created a [Silent Sounds Pack](https://github.com/Dteyn/sf2000/raw/main../sounds/silentSounds/SF2000_Silent_Sounds_Pack.zip) (direct link to `.zip`). It contains eight replacement silent audio files - just drop them into the `Resources` folder on the microSD card, replacing the eight current files, and say goodbye to the SF2000's UI noises.
-
-## Unknown Files
-These are files that I have not yet determined what they do; if anyone has any information on these, do post about it in the Data Frog channel in the Retro Handhelds Discord server please!
-
-| Filename | 03.15 | 04.20 | 05.15 | 1.5 | 1.6 | 1.7 | 1.71 | Description |
-| -------- | ----- | ----- | ----- | --- | --- | --- | ---- | ----------- |
-| `kcnuv.lit` | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | UNKNOWN; a bunch of 4-byte binary chunks (e.g., `0xC4 0x00 0x00 0x00`), followed by a list of .NES ROM file names. Very similar to the `.bvs`/`.nec`/`.tax` files detailed above, but doesn't have the same type of "header" they have |
 
 ## Notes For Theme Creators
 This section isn't really about the `Resources` files per-se, but it's tangentially related. The fact that the SF2000's UI resources are pulled from the microSD card opens up the door to "theming" the device, which is great. However, if you do decide you want to make a theme for the SF2000, here's a few things I've found that you may want to bear in mind:

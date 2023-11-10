@@ -33,7 +33,7 @@ If your SF2000 is currently able to boot normally (i.e., when you power it on, y
 4. Connect the microSD card to your computer
 5. Download this zip file: [SF2000_bootloader_bugfix.zip](https://cdn.discordapp.com/attachments/1099465777825972347/1105582470990135316/SF2000_bootloader_bugfix.zip)
 6. Extract the zip file; inside is a folder called `UpdateFirmware`, containing a single file called `Firmware.upk`
-7. Copy the `UpdateFirmware` folder to the root of the microSD card, so that the `UpdateFirmware` folder is in the same place as the `bios` and `roms` folders (i.e., you'll have an `SD:/UpdateFirmware/Firmware.upk` file)
+7. Copy the `UpdateFirmware` folder to the root of the microSD card, so that the `UpdateFirmware` folder is in the same place as the `bios` and `roms` folders (i.e., you'll have an `sd:/UpdateFirmware/Firmware.upk` file)
 8. Eject the microSD card from your computer, and put it back in the SF2000
 9. Turn the SF2000 on; you should see a message in the lower-left corner of the screen indicating that patching is taking place. The process will only last a few seconds. If you do not see this message, and instead just go to the main menu as normal, then either this means your SF2000 has previously had the fix applied already, or you should double-check you've placed the patch file in the right place
 10. When the patching is complete, you will be taken to the main menu as usual

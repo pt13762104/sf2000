@@ -59,7 +59,6 @@ This document is a collection of notes and information I've made about the devic
       - [Favourites and History](sf2000/resources.md#favourites-and-history)
     - [ROM Lists](sf2000/resources.md#rom-lists)
     - [Sounds](sf2000/resources.md#sounds)
-    - [Unknown Files](sf2000/resources.md#unknown-files)
     - [Notes For Theme Creators](sf2000/resources.md#notes-for-theme-creators)
   - [Tools and Links](tools.md)
   - [Document Version History](version.md)

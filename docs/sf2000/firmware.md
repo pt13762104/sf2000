@@ -15,7 +15,7 @@ Known firmware versions are currently (dates approximate):
 | October 7th | 1.7 | The [SNES first-launch speed bug](../faq.md#snes-games-run-really-slowly-whats-wrong) was fixed, however there is a new critical bug in SNES save-states - they're not created correctly, and attempting to load one created with this firmware version hangs the device. DO NOT USE THIS FIRMWARE VERSION! |
 | October 13th | 1.71 | This is a bugfix release - the bug with SNES save states introduced in 1.7 was fixed, so this firmware appears to be stable again. Analysis shows no other significant changes from 1.7 |
 
-If you want to check which version of the firmware you currently have on your SF2000, you can [use the Data Frog SF2000 Firmware Version Checker tool here](../tools/firmwareVersionChecker.htm).
+If you want to check which version of the firmware you currently have on your SF2000, you can [use the Data Frog SF2000 Firmware Version Checker tool here](https://vonmillhausen.github.io/sf2000/tools/firmwareVersionChecker.htm).
 
 Custom firmware (CFW) is currently in the very early stages of development (see [here](../faq.md#is-there-any-custom-firmware)). In the meantime, the stock firmware has been investigated quite a bit; here are some findings from it:
 
@@ -51,7 +51,7 @@ Alternatively, recent versions of [Tadpole](https://github.com/EricGoldsteinNz/t
 There are also some [other reasons why an SF2000 may not be booting](../faq.md#help-my-sf2000-wont-turn-on-or-is-stuck-at-a-black-screen).
 
 ## Button Mappings/Key Bindings
-`bnister` discovered that the OS supports loading game-specific key bindings from `.kmp` files, stored in the `save` folder for each system and named after a game's ROM file (e.g., `/FC/save/Game Name.EXT.kmp`). They also discovered where in the `bisrv.asd` file the default mappings for each emulator are stored. Working with this information, `notv37` worked out what bits related to what buttons for each emulator. Using both their findings, we now have a tool which can be used to update both the global button mappings for the emulators, as well as create per-ROM mappings - you can [find this tool here](../tools/buttonMappingChanger.htm).
+`bnister` discovered that the OS supports loading game-specific key bindings from `.kmp` files, stored in the `save` folder for each system and named after a game's ROM file (e.g., `/FC/save/Game Name.EXT.kmp`). They also discovered where in the `bisrv.asd` file the default mappings for each emulator are stored. Working with this information, `notv37` worked out what bits related to what buttons for each emulator. Using both their findings, we now have a tool which can be used to update both the global button mappings for the emulators, as well as create per-ROM mappings - you can [find this tool here](https://vonmillhausen.github.io/sf2000/tools/buttonMappingChanger.htm).
 
 Note that the game-specific key bindings function have been removed from the May 15th firmware onwards.
 
@@ -60,4 +60,4 @@ When the device is powered on, a "Welcome" image is displayed for a short time b
 
 ![Boot Logo](../images/bootlogo.png)
 
-The image is _actually_ displayed at half-resolution on the internal display though, `256x100`, centred in the middle of the screen. The boot logo can be changed to an arbitrary `256x100` image using a web-based tool I wrote, which you can [find here](../tools/bootLogoChanger.htm).
+The image is _actually_ displayed at half-resolution on the internal display though, `256x100`, centred in the middle of the screen. The boot logo can be changed to an arbitrary `256x100` image using a web-based tool I wrote, which you can [find here](https://vonmillhausen.github.io/sf2000/tools/bootLogoChanger.htm).

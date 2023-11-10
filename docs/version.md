@@ -1,5 +1,6 @@
 # Document Version History
-
+## 20231110 - `b794f05`
+- Update the CFW FAQ (fix date from Oct 20th to Nov 5th).
 ## 20231110 - `3911adf` (1.45)
 - Update to version 1.45 of the official site (20231105 - `5c4affd`).
 - Changelog:

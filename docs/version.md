@@ -1,11 +1,9 @@
 # Document Version History
-## 20231110 - `b794f05`
-- Update the CFW FAQ (fix date from Oct 20th to Nov 5th).
+
 ## 20231110 - `3911adf` (1.45)
-- Update to version 1.45 of the official site (20231105 - `5c4affd`).
+- Updated to version 1.45 of the official site (20231105 - `5c4affd`).
 - Changelog:
     * Updated the [is-this-any-good](faq.md#is-this-thing-any-good) FAQ to mention screen tearing (thanks for the suggestion `superbottle`!), as well as references to the demonstration of the screen tearing fix. 
-    * Updated the CFW FAQ with the latest details regarding the multicore alpha. 
     * Added a note about the screen tearing fix demo to the Display section. 
     * Added a note to the Wireless Connectivity section to mention that wireless controllers compatible with the froggy cannot be used with non-froggy-style devices. 
     * Rearranged some files in the Used and Unused sections, and moved that one pesky unknown file to the Other section (thanks for the help, `bnister`!).
@@ -13,7 +11,7 @@
 - Add the missing zaqrc file, changed the color, add README.md
 ## 20231103 - `bc8065f` (1.44)
 - First time that the site is uploaded - based on v1.44 with relative links fixed (no more changes)
-## *pre-1.44 _ official changelog* 
+## Official changelog (pre-1.45) 
 - `20231020 - 1.44`: Updated [the CFW FAQ](#is-there-any-custom-firmware) with some more details on the multicore experiment. Fixed a typo (Cave Story, not Cave Store - thanks `neddunn`!).
 
 - `20231019 - 1.43`: Refactored [the CFW FAQ](#is-there-any-custom-firmware) to make the hcRTOS and multicore efforts more distinct. Refactored [the shortcuts FAQ](#how-do-i-change-the-four-shortcutsgames-listed-on-each-systems-main-menu-page) to mention Tadpole first (easier for most folks). Refactored [the slow SNES FAQ](#snes-games-run-really-slowly-whats-wrong) in light of 1.71. Refactored [the quiet A/V output FAQ](#when-i-connect-the-sf2000-to-a-tv-via-the-av-cable-the-sound-is-very-quietlow---is-that-normal) to suggest firmware updating first. Added details about the new 1.71 firmware version to the [Firmware](#firmwarebios-bisrvasd) and [Resources](#resources) sections, and did a lot of little edits throughout the doc as well to standardise on Data Frog's version numbering (seems to be what most folks refer to). Added a note that [the permanent bootload bugfix](#if-your-sf2000-is-currently-able-to-boot-normally) only needs to be applied once per device. Added another modification example to the analysis of [`Foldername.ini`](#foldernameini) courtesy of `wyverino`.

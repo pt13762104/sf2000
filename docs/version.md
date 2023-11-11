@@ -1,5 +1,6 @@
 # Document Version History
-
+## 20231111 - `6c7abeb`
+- Updated the CFW FAQ on the latest details regarding the multicore alpha (not updated yet in 20231110, but exists in 1.45).
 ## 20231110 - `3911adf` (1.45)
 - Updated to version 1.45 of the official site (20231105 - `5c4affd`).
 - Changelog:

@@ -1,0 +1,731 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://pt13762104.github.io/sf2000/sf2000/emulators/">
+      
+      
+        <link rel="prev" href="../hardware/">
+      
+      
+        <link rel="next" href="../firmware/">
+      
+      <link rel="icon" href="../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>Emulators - SF2000</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#emulators" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SF2000" class="md-header__button md-logo" aria-label="SF2000" data-md-component="logo">
+      
+  <img src="../../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SF2000
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Emulators
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pt13762104/sf2000/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SF2000" class="md-nav__button md-logo" aria-label="SF2000" data-md-component="logo">
+      
+  <img src="../../logo.png" alt="logo">
+
+    </a>
+    SF2000
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pt13762104/sf2000/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/" class="md-nav__link">
+        Tools and Links
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version/" class="md-nav__link">
+        Version History
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="true">
+          SF2000
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="SF2000" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          SF2000
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Emulators
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Emulators
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arcade" class="md-nav__link">
+    Arcade
+  </a>
+  
+    <nav class="md-nav" aria-label="Arcade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#neo-geo-unibios-menu" class="md-nav__link">
+    Neo Geo Unibios Menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skp-files" class="md-nav__link">
+    .skp Files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zfb-files" class="md-nav__link">
+    .zfb Files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nes" class="md-nav__link">
+    NES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snes" class="md-nav__link">
+    SNES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#genesismega-drive" class="md-nav__link">
+    Genesis/Mega Drive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-boy" class="md-nav__link">
+    Game Boy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-boy-color" class="md-nav__link">
+    Game Boy Color
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-boy-advance" class="md-nav__link">
+    Game Boy Advance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#save-states" class="md-nav__link">
+    Save States
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-roms" class="md-nav__link">
+    Default ROMs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../firmware/" class="md-nav__link">
+        Firmware
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arcade" class="md-nav__link">
+    Arcade
+  </a>
+  
+    <nav class="md-nav" aria-label="Arcade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#neo-geo-unibios-menu" class="md-nav__link">
+    Neo Geo Unibios Menu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skp-files" class="md-nav__link">
+    .skp Files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zfb-files" class="md-nav__link">
+    .zfb Files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nes" class="md-nav__link">
+    NES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snes" class="md-nav__link">
+    SNES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#genesismega-drive" class="md-nav__link">
+    Genesis/Mega Drive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-boy" class="md-nav__link">
+    Game Boy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-boy-color" class="md-nav__link">
+    Game Boy Color
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-boy-advance" class="md-nav__link">
+    Game Boy Advance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#save-states" class="md-nav__link">
+    Save States
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-roms" class="md-nav__link">
+    Default ROMs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+<h1 id="emulators">Emulators</h1>
+<p>The device advertises support for arcade, NES, SNES, Genesis/Mega Drive, Game Boy, Game Boy Color and Game Boy Advance; it also supports loading Master System ROMs. SNES and GBA performance are very hit-or miss (more miss than hit, really); the other consoles actually perform fairly well. All consoles currently stretch their output to fill the display, and do not maintain aspect ratio.</p>
+<p>The SF2000 appears to be using Libretro with a custom front-end (i.e., not RetroArch).</p>
+<h2 id="arcade">Arcade</h2>
+<p>The device is running a customised version of Final Burn Alpha, close to v0.2.96.86 (Git commit <a href="https://github.com/dmitrysmagin/fba-a320/commit/a324b2ddb92f82a48b90e2ee6af0cf69403219ab"><code>a324b2d</code></a>), but with a tacked-on Libretro interface from v0.2.97.42 (Git commit <a href="https://github.com/Aftnet/fbalpha/commit/621e371"><code>621e371</code></a>) and possibly some other custom changes made by Data Frog or the third-party company that produces firmware for them. Thanks to some truly exceptional work by <code>adcockm</code> from the Retro Handhelds Discord, we know it supports an unusual mix of ROM sets, largely based on MAME 0.106 and Final Burn Alpha v0.2.96.86. <code>adcockm</code> has gone ahead and compiled two separate <a href="https://mamedev.emulab.it/clrmamepro/">Clrmamepro</a> dat files - <a href="/arcade/DataFrog_SF2000_FBA_v0.2.97.42.dat">one for <em>all</em> sets technically supported by the SF2000's current BIOS</a> (as of May 2023; though note that "supported" does not mean working or playable), and <a href="/arcade/DataFrog_SF2000_FBA_v0.2.97.42_playable_no_dups.dat">one for all playable sets</a> with duplicates removed (and note, "playable" may include games with missing sound, graphical glitches, performance issues, but are otherwise technically functional). If you want to build a working set (must be non-merged) from the dat files, <code>adcockm</code> has further provided <a href="/arcade/Building_the_DataFrog_SF2000_FBA_v0.2.97.42_set.txt">a list of "hints"</a> as the sets you'll need to track down - for obvious reasons neither I nor anyone else can provide links to such material, but hopefully the hints will get you something you can start searching for. Finally, there's also <a href="/arcade/DataFrog_SF2000_FBA.html">a HTML document</a> with a list of all of the supported sets along with some useful metadata, such as the set's full name, playability information, screen orientation, etc.. The <code>inrom</code> column indicates if the ROM was included on the SF2000's stock microSD card; it's interesting to note that there were more ROMs located on the card than were defined in the <code>mswb7.tax</code> file (and thus available from the arcade game list); none of the unlisted games were actually playable on the SF2000, so it's possible someone from Data Frog actually tested the games to an extent, and removed ones from the available list that were broken.</p>
+<p><code>adcockm</code> also provided the following interesting statistics:</p>
+<ul>
+<li>Number of arcade ROMs known by the SF2000's firmware: <code>1431</code></li>
+<li>Number properly rotated: <code>1291</code></li>
+<li>Number with vertical orientation: <code>134</code></li>
+<li>Number with screen upside-down: <code>6</code></li>
+<li>Number "playable" (maybe no sound, some slowness, minor graphics issues): <code>949</code></li>
+<li>Number unplayably broken but technically running: <code>175</code></li>
+<li>Number fully broken (load hang/crash, etc.): <code>307</code></li>
+<li>Number of playable unique games (dupes filtered out) in proper rotation: <code>354</code></li>
+<li>Number of playable unique games (dupes filtered out) with rotated display: <code>61</code></li>
+<li>Number of different versions of Street Fighter 2: <code>60+</code> 😵‍💫 [Von Millhausen: I think this stat is only half a joke!]</li>
+<li>Playable set total size: <code>3.10 GB</code> (3,336,344,502 bytes)</li>
+<li>Full set total size: <code>11.4 GB</code> (12,245,306,389 bytes)</li>
+</ul>
+<h3 id="neo-geo-unibios-menu">Neo Geo Unibios Menu</h3>
+<p>Discord user <code>nanchon18#2262</code> discovered that with Neo Geo games using the Unibios, the Unibios menu can be accessed in-game by pressing <code>SELECT + START + up</code> simultaneously. The Unibios allows access to features like cheats and DIP-switch settings for the game.</p>
+<h3 id="skp-files">.skp Files</h3>
+<p>Another thing worth mentioning about arcade emulation on the SF2000; in the <code>ARCADE</code> folder on the microSD card is a sub-folder called <code>skp</code>. This folder contains (by default) 167 <code>.skp</code> files, each named after one of the zipped ROM sets in the <code>ARCADE/bin</code> folder (e.g., <code>mslug.zip.skp</code>). These files are actually save state bundle files, just like the ones you can save yourself using the save state feature - the only difference is that these have the <code>.skp</code> extension instead of <code>.sa#</code>, and these are loaded automatically when the game itself is loaded. Many of these files start their respective arcade game up with a credit already inserted. One speculative possibility for why these files exist is that some arcade games will start to a dip-switch screen, or some other ROM-check screen, which may be difficult to bypass with the SF2000's limited controls - a save state that automatically loads <em>past</em> such a screen is therefore very useful to have.</p>
+<p>As the <code>.skp</code> files are just save states under a different name, if you want to mess around with them you can <a href="https://vonmillhausen.github.io/sf2000/tools/saveStateTool.htm">use my Save State Tool</a> to do so - if you're creating a new <code>.skp</code> file, just pick any save state slot, and change the downloaded SF2000 save state bundle extension from <code>.sa#</code> to <code>.skp</code>.</p>
+<p>You can <a href="#save-states">learn more about save states below</a>.</p>
+<h3 id="zfb-files">.zfb Files</h3>
+<p>Due to the different nature of arcade emulation compared to any of the other systems the SF2000 supports, the ROM layout for the arcade section is different as well. Inside the <code>/ARCADE</code> folder in the root of the microSD card you'll find a <code>bin</code> subfolder, and a bunch of <code>.zfb</code> files. The <code>bin</code> folder contains <code>.zip</code> files with an enforced 8.3 file naming scheme, and they contain the actual ROM data for the FBA emulator. The <code>.zfb</code> files are used to populate the arcade game list when you go into the arcade section on the SF2000's menu, and their file structure is as follows:</p>
+<ul>
+<li>The first 59,905 bytes are an RGB565 image for the game thumbnail art shown in the menu (<code>144px * 208px</code>)</li>
+<li>The next four bytes are <code>0x00</code></li>
+<li>The next sequence of bytes is the name of a <code>.zip</code> file in the <code>bin</code> folder, without any path (SF2000's firmware automatically looks for the <code>.zip</code> in a <code>bin</code> subfolder relative to where the <code>.zfb</code> file is stored - thanks <code>.ericgoldstein</code> for the testing!), e.g. <code>gamename.zip</code></li>
+<li>Finally, the file ends with two <code>0x00</code> bytes</li>
+</ul>
+<p>The name of the <code>.zfb</code> file is how the game is named in the SF2000 menu. The four arcade game shortcuts on the top-level SF2000 menu point directly to their respective <code>.zip</code> files, and not to the <code>.zfb</code> files (as the <code>.zfb</code>s are just for a name and a thumbnail, neither of which are required on the top-level menu).</p>
+<h2 id="nes">NES</h2>
+<p>Emulator is FCEUmm (Git commit <a href="https://github.com/libretro/libretro-fceumm/commit/7cdfc7e"><code>7cdfc7e</code></a>). There are references in the firmware to different NES palettes, but there's no interface or configuration for the emulator itself to choose one. On the original firmware, the A and B buttons were swapped. See "<a href="#button-mappingskey-bindings">Button Mappings/Key Bindings</a>" section below.</p>
+<h2 id="snes">SNES</h2>
+<p>Emulator is Snes9x 2005 v1.36 (Git commit <a href="https://github.com/libretro/snes9x2005/commit/b94a804"><code>b94a804</code></a>). For most firmware versions before 1.71, SNES games often appear to run very slowly <em>on first launch</em>; you can <a href="#snes-games-run-really-slowly-whats-wrong">learn more about this issue and how to correct it here</a>.</p>
+<h2 id="genesismega-drive">Genesis/Mega Drive</h2>
+<p>Emulator is PicoDrive 1.91 (Git commit <a href="https://github.com/libretro/picodrive/commit/cbc93b6"><code>cbc93b6</code></a>). Works pretty well. This emulator is capable of loading Master System ROMs if placed in the user ROMs folder on the microSD card; Game Gear ROMs do not load. Some PAL-region games may run too fast; NTSC-region games seem to always run at the correct speed. On the original firmware, A was mapped to A, B was mapped to B, and RB was mapped to C for some reason. See "<a href="#button-mappingskey-bindings">Button Mappings/Key Bindings</a>" section below.</p>
+<h2 id="game-boy">Game Boy</h2>
+<p>Emulator is TGB Dual v0.8.3 (Git commit <a href="https://github.com/libretro/tgbdual-libretro/commit/9be31d3"><code>9be31d3</code></a>). Uses a black and white colour palette, which currently cannot be changed. On the original firmware, the A and B buttons were swapped. See "<a href="#button-mappingskey-bindings">Button Mappings/Key Bindings</a>" section below.</p>
+<h2 id="game-boy-color">Game Boy Color</h2>
+<p>Emulator is TGB Dual v0.8.3 (Git commit <a href="https://github.com/libretro/tgbdual-libretro/commit/9be31d3"><code>9be31d3</code></a>). On the original firmware, the A and B buttons were swapped. See "<a href="#button-mappingskey-bindings">Button Mappings/Key Bindings</a>" section below.</p>
+<h2 id="game-boy-advance">Game Boy Advance</h2>
+<p>Emulator is gpSP v0.91 (Git commit <a href="https://github.com/libretro/gpsp/commit/261b2db"><code>261b2db</code></a>). Performance is fairly poor. On the original firmware, A and B buttons are mapped correctly, but the GBA shoulder buttons are mapped to X and Y for some reason. See "<a href="#button-mappingskey-bindings">Button Mappings/Key Bindings</a>" section below.</p>
+<p>While the SF2000 does include a copy of the real GBA BIOS file in the <code>bios</code> folder, there's a bug in the 1.5 firmware (and possibly earlier firmwares) that prevents that BIOS from ever actually being loaded. As such, gpSP <em>always</em> falls back to the built-in "NORMMATT" BIOS instead (a reverse-engineered BIOS that is not identical to Nintendo's one). This has been noted to have some compatibility issues - for example, the main menu on "The Legend of Zelda - The Minish Cap" is broken on a stock SF2000 using the 1.5 firmware due to the NORMMATT BIOS. You can correct for this bug by copying the <code>gba_bios.bin</code> file from the <code>bios</code> folder to the two following locations (create any folders as needed - and credit to <code>bnister</code> for the finding!):</p>
+<ul>
+<li><code>sd:/GBA/mnt/sda1/bios/gba_bios.bin</code> (this fixes it for the main GBA game list)</li>
+<li><code>sd:/ROMS/mnt/sda1/bios/gba_bios.bin</code> (this fixes it for GBA games added to the user <code>ROMS</code> folder)</li>
+</ul>
+<h2 id="save-states">Save States</h2>
+<p>All of the above emulators support stave sates natively through an interface that is accessed by pressing SELECT + START simultaneously in-game. Four save state slots are provided per-game; the files have the extensions <code>.sa0</code>, <code>.sa1</code>, <code>.sa2</code> and <code>.sa3</code> depending on which slot they're for, and are stored in a <code>save</code> subfolder along-side wherever the game's ROM file is stored. The extension is appended to the name of the ROM file the save state is for; for example, if the ROM is called <code>sd:/ROMS/Apotris.gba</code>, and the save state is for slot 2, then the save state file name will be <code>sd:/ROMS/save/Apotris.GBA.sa1</code>. One weird note is that save states created for ROMs stored in the user <code>ROMS</code> folder on the device get their ROM file extension capitalised when a save state is created (as per the previous example with <code>Apotris</code>, where <code>.gba</code> became <code>.GBA</code>); this does <em>not</em> happen with save states created in the other ROM folders. The capitalisation doesn't appear to matter - the SF2000 successfully loads save states with any extension capitalisation in any folder.</p>
+<p>If you want to back-up the save states you've got on your SD2000's microSD card, simply back up the <code>save</code> folders and their contents (be sure not to mix up which <code>save</code> folder belongs to which ROM folder on the device). <a href="https://github.com/EricGoldsteinNz/tadpole">Tadpole</a> also has a save backup feature, which will give you a <code>.zip</code> file containing all of your saves.</p>
+<p>The save state files themselves contain two zlib-compressed data blobs, plus associated metadata - one blob for the raw save state data created by the emulator itself, and one blob for the thumbnail used for the save state in the UI. The exact format is as follows</p>
+<ul>
+<li>The first four bytes are a little-endian Uint32 storing the length of the zlib-compressed raw save state data</li>
+<li>The next N bytes are the zlib-compressed raw save state data</li>
+<li>The next four bytes are a little-endian Uint32 storing the width of the thumbnail image in pixels</li>
+<li>The next four bytes are a little-endian Uint32 storing the height of the thumbnail image in pixels</li>
+<li>The next four bytes are a little-endian Uint32 storing the length of the zlib-compressed thumbnail data</li>
+<li>The next N bytes are the zlib-compressed thumbnail data (deflates to a raw RGB565 image, much like many of the other images used by the SF2000 UI)</li>
+<li>The last four bytes are a little-endian Uint32 storing the offset within the file of where the thumbnail metadata starts (i.e., the offset of the first byte of width data)</li>
+</ul>
+<p>If you want to mess around with SF2000 save states, you can <a href="https://vonmillhausen.github.io/sf2000/tools/saveStateTool.htm">do so using my SF2000 Save State Tool, which you can find here</a>.</p>
+<h2 id="default-roms">Default ROMs</h2>
+<p>The default full firmware for the SF2000 comes with over 6000 ROMs across the seven supported systems. The manual suggests these are for "demonstration purposes" only, and should be deleted by the owner (with any failure to do so not being their responsibility) - despite the fact that the SF2000's menus are hard-coded for this specific list of ROMs.</p>
+<p>The ROM files themselves are a custom bundle format; the first <code>59,904 bytes</code> are a <code>144px x 208px</code> RGB565 image shown as a thumbnail beside the game when selected in a game-list, and the remainder of the file is a slightly mangled/obfuscated ZIP file containing the game's single ROM file. The only exception to this format are the arcade ROMs, which consist of a plain-old Final Burn Alpha ROM zip file, coupled with a <code>.zfb</code> file containing the thumbnail image and a pointer to the ROM zip file name; you can <a href="#zfb-files">find a deeper dive in the format of <code>.zfb</code> files here</a>.</p>
+<p>I was curious to see how the included ROMs matched up against the current "<a href="https://no-intro.org/">No-Intro</a>" catalogue for each of the non-arcade systems, so I wrote a small script to extract the ROMs from the SF2000's bundles (taken from the 1.5 full firmware image), and compare the hashes against the current (June 9th, 2023) set of No-Intro DAT files. You can <a href="../../defaultRoms/defaultRomsNoIntroCheck.htm">find a big HTML file with all of the results here</a>, and <a href="../../defaultRoms/defaultRomsNoIntroCheck.csv">a raw CSV file of the same data here</a>. You can click most of the column headers in the HTML version to sort the table by that column. The NES ROMs had their first 16-bytes stripped to remove their "iNES" header (thanks for the tip, <code>bnister</code>!), and were compared against the "header-less" No-Intro NES dat file.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  </body>
+</html>

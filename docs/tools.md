@@ -18,6 +18,7 @@ All of these are linked above already in their relevant sections, but just in ca
 - [Save State Tool](https://vonmillhausen.github.io/sf2000/tools/saveStateTool.htm)
 - [SF2000 Battery Level Patcher by Dteyn](https://github.com/Dteyn/SF2000_Battery_Level_Patcher)
 - [SF2000 Bluetooth Mod by IQ_132](https://neo-source.com/stuff/datafrog/)
+- [SF2000 FixHebrew by `amir16yp`](https://github.com/amir16yp/sf2000-fixhebrew) (corrects Hebrew inaccuracies in the stock UI theme)
 - [SF2000 SNES Emulator Fix by Dteyn](https://dteyn.github.io/sf2000/tools/snesEmulatorFix.htm)
 - [SF2000 Theme Compilation Page](https://zerter555.github.io/sf2000-collection/)
 - [Silent background music file](sounds/silentMusic/pagefile.sys) (replace the file in the `Resources` folder on the microSD card)

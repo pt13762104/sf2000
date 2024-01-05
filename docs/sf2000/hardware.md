@@ -41,3 +41,6 @@ There's some limited evidence to suggest the A/V output is at 576i. When outputt
 On my own unit, plugging in a charging cable while outputting over A/V introduces a lot of video noise in the A/V signal; so those planning to use the SF2000 as a TV console may need to do so while running on battery for the best experience.
 
 While not strictly related to the A/V jack, Discord user `iq_132` has written a guide on how to add Bluetooth audio support to the SF2000 by feeding off of the contacts for the internal speaker; you can [find their guide here](https://neo-source.com/stuff/datafrog/).
+
+## USB-C Port
+The SF2000 has a USB-C port for charging the battery (see the [Battery](#battery) section for more information). As shipped, only USB-A to USB-C cables work for charging, as the SF2000 lacks the two resistors required for USB-C to USB-C cable compatibility. It has been reported that (if you have sufficient soldering skills) those two resistors can be added to enable USB-C to USB-C charging. Not all of the channels required to support data are connected, so you cannot plug in external devices like controllers, WiFi adapters, USB adapters, etc. and have them work.

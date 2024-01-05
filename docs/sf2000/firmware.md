@@ -24,7 +24,7 @@ The bootloader on the SF2000 (the bit of code embedded in the devices hardware; 
 
 It's strongly recommended that you fix the bug on your SF2000, as failure to do so can cause some headaches for you down the road with a non-booting device. There's a couple of ways to go about fixing it:
 
-## If Your SF2000 Is Currently Able To Boot Normally
+### If Your SF2000 Is Currently Able To Boot Normally
 If your SF2000 is currently able to boot normally (i.e., when you power it on, you get to the stock main menu), then you can permanently fix the bug in the device's hardware as follows (credit to `bnister` for both finding the root cause for the bug, and creating the permanent fix) - this only needs to be done _once_ per SF2000, and is not tied to the microSD card or BIOS in any way:
 
 1. Ensure your SF2000 is in a state where it boots normally when turned on (displays a boot logo, proceeds to the stock firmware main menu)
@@ -41,7 +41,7 @@ If your SF2000 is currently able to boot normally (i.e., when you power it on, y
 12. Connect the microSD card to your computer
 13. Delete the `UpdateFirmware` folder (it's no longer needed)
 
-## If Your SF2000 Is Currently Not Booting (Black Screen)
+### If Your SF2000 Is Currently Not Booting (Black Screen)
 If your device is currently _not_ booting, and you've modified the `bios` folder in any way (e.g., patching a new boot logo, upgrading firmware, etc.), you can attempt to get the SF2000 booting again by creating empty text files inside the `bios` folder, one at a time (this creates new FAT entries, and should get you away from numbers of entries the stock bootloader doesn't like). For example, create an empty file in the `bios` folder called "temp1.txt", put the microSD card back in the SF2000, and see if it boots. If it still doesn't, add a "temp2.txt" file to the `bios` folder, put the card back in the SF2000 and try booting again, etc..
 
 Alternatively, recent versions of [Tadpole](https://github.com/EricGoldsteinNz/tadpole) can help to automate this process for you.

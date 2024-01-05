@@ -1,4 +1,11 @@
 # Document Version History
+- Updated to version 1.46 of the official site (20231211 - `b9f9e46`).
+- Changelog:
+    * Added a sub-section to [Hardware](#hardware) about [the USB-C port](#usb-c-port), along with a mention of the hardware hack to add USB-C to USB-C charging support (thanks for the suggestion, `@uli42`). 
+    * Minor updates to [the custom firmware FAQ](#is-there-any-custom-firmware). Updates to the [Arcade](#arcade) section to note that the specific version of FBA on the SF2000 is a custom build with internal tweaks made by the firmware's developer. 
+    * Made a minor correction to the [.zfb Files](#zfb-files) section (had resolution dimensions swapped by mistake). Added a note to the [Default ROMs](#default-roms) section with the specific dimensions of the thumbnail image they contain. 
+    * Added links to `amir16yp`'s corrected Hebrew menu translations.
+- Fixed indentation.
 ## 20231111 - `6c7abeb`
 - Updated the CFW FAQ on the latest details regarding the multicore alpha (not updated yet in 20231110, but exists in 1.45).
 ## 20231110 - `3911adf` (1.45)

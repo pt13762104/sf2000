@@ -86,7 +86,7 @@ As far as I am aware, all of the below images are actively used by the latest fi
 | `ucby4.aax` | 1008x164 | BRGA |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | User settings screen icons and labels in Arabic | [view](../images/ucby4.aax.png) |
 | `urlkp.bvs` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | NES game-list background | [view](../images/urlkp.png) |
 | `uyhbc.dck` | 640x480 | RGB565 Little Endian |  |  | ✨ | ✅ | ✅ | ✅ | ✅ | Favourites game-list background | [view](../images/uyhbc.dck.png) |
-| `vidca.bvs` | 1008x164 | BRGA |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | User settings screen icons and labels in Hebrew | [view](../images/vidca.bvs.png) |
+| `vidca.bvs` | 1008x164 | BRGA |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | User settings screen icons and labels in Hebrew ; has in inaccurate translation, see SF2000 FixHebrew by `amir16yp` in the [Tools and Links](#tools-and-links) section | [view](/images/vidca.bvs.png) |
 | `vssvc.nec` | 1008x164 | BRGA |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | User settings screen icons and labels in Malay | [view](../images/vssvc.nec.png) |
 | `wshrm.nec` | 217x37 | BGRA | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | "Yes" and "No" text, with "Yes" selected; used when being asked if you want to overwrite a save-game slot | [view](../images/wshrm.png) |
 | `xajkg.hsp` | 640x480 | RGB565 Little Endian | ✨ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Game Boy main menu background | [view](../images/xajkg.png) |
@@ -165,7 +165,7 @@ These are other files that have been identified, which don't fit into the other 
 | `tvctu.uby` |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | UI strings in Russian |
 | `vdaz5.bjk` |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | UI strings in Arabic |
 | `wtrxj.lbd` |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | UI strings in Malay |
-| `xjebd.clq` |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | UI strings in Hebrew |
+| `xjebd.clq` |  | ✨ | 🚩 | ✅ | ✅ | ✅ | ✅ | UI strings in Hebrew; has in inaccurate translation, see SF2000 FixHebrew by `amir16yp` in the [Tools and Links](#tools-and-links) section |
 
 ### Foldername.ini
 This file controls some of the UI settings for the main menu. It's a plain-text file, but not an actual INI file. It's contents from the 1.5 firmware (just as an example) are as follows:

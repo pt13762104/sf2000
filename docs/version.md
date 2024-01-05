@@ -1,4 +1,5 @@
 # Document Version History
+## 20240105 - `4f4c914`
 - Updated to version 1.46 of the official site (20231211 - `b9f9e46`).
 - Changelog:
     * Added a sub-section to [Hardware](#hardware) about [the USB-C port](#usb-c-port), along with a mention of the hardware hack to add USB-C to USB-C charging support (thanks for the suggestion, `@uli42`). 
